@@ -1,0 +1,126 @@
+{
+  "env": {
+    "jest": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "globals": {
+    "__DEV__": false,
+    "console": false,
+    "require": false
+  },
+  "rules": {
+    "@typescript-eslint/indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "CallExpression",
+          "JSXElement *",
+          "JSXElement"
+        ]
+      }
+    ],
+    "@typescript-eslint/no-use-before-define": [
+      "off"
+    ],
+    // "array-bracket-spacing": [
+    //   "error",
+    //   "always"
+    // ],
+    "curly": [
+      "error",
+      "multi-or-nest"
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1,
+        "ignoredNodes": [
+          "CallExpression",
+          "JSXElement *",
+          "JSXElement"
+        ]
+      }
+    ],
+    "linebreak-style": [
+      "error",
+      "unix"
+    ],
+    "no-console": "warn",
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "arraysInObjects": true,
+        "objectsInObjects": true
+      }
+    ],
+    "object-property-newline": [
+      "error",
+      {
+        "allowAllPropertiesOnSameLine": true
+      }
+    ],
+    "operator-linebreak": [
+      "error",
+      "before",
+      {
+        "overrides": {
+          "?": "after",
+          "=": "after",
+          "==": "after",
+          "===": "after",
+          "+=": "after",
+          "-=": "after",
+          "*=": "after",
+          "/=": "after"
+        }
+      }
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ],
+    // "react/jsx-curly-spacing": [
+    //   "error",
+    //   {
+    //     "when": "always",
+    //     "children": true
+    //   }
+    // ],
+    "react/jsx-indent-props": [
+      "error",
+      2
+    ],
+    "react/jsx-uses-vars": "error",
+    "semi": [
+      "error",
+      "never"
+    ],
+    // "space-before-blocks": [
+    //   "error",
+    //   {
+    //     "functions": "always",
+    //     "keywords": "never",
+    //     "classes": "always"
+    //   }
+    // ],
+    "space-in-parens": [
+      "error",
+      "never"
+    ]
+  }
+}

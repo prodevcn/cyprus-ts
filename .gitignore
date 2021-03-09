@@ -1,0 +1,13 @@
+node_modules/**/*
+/node_modules
+/.expo
+.expo/*
+coverage
+npm-debug.*
+*.jks
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+web-report/

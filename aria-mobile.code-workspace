@@ -1,0 +1,74 @@
+{
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "editor.detectIndentation": false,
+    "editor.formatOnSave": false,
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+      80,
+      100
+    ],
+    "editor.tabSize": 2,
+    "eslint.options": {
+      "configFile": ".eslintrc.json"
+    },
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      {
+        "language": "typescript",
+        "autoFix": true
+      },
+      {
+        "language": "typescriptreact",
+        "autoFix": true
+      }
+    ],
+    "javascript.format.enable": true,
+    "javascript.validate.enable": true,
+    "typescript.format.enable": true,
+    "typescript.validate.enable": true,
+    "files.eol": "\n",
+    "files.exclude": {
+      "**/.expo/": true,
+      "node_mods": true,
+      "node_modules": true,
+      "coverage": true,
+      "**/.env.local": true,
+      "**/.env.development.local": true,
+      "**/.env.test.local": true,
+      "**/.env.production.local": true
+    },
+    "todohighlight.keywords": [
+      {
+        "text": "TODO PROD",
+        "color": "black",
+        "backgroundColor": "red"
+      },
+      {
+        "text": "TODO CR",
+        "color": "white",
+        "backgroundColor": "red"
+      },
+      {
+        "text": "TODO TEMP",
+        "color": "black",
+        "backgroundColor": "pink"
+      },
+      {
+        "text": "TODO",
+        "color": "black",
+        "backgroundColor": "orange"
+      },
+      {
+        "text": "NOTE",
+        "color": "white",
+        "backgroundColor": "green"
+      }
+    ],
+  }
+}

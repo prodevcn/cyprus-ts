@@ -1,0 +1,14 @@
+export const __BUILD_FOR_TEST__ = false
+export const __LOG__ = false
+export const __SHOW_DEV_NOTES__ = false
+export const __IS_DEV_MODE__ = false
+export const __DEV_SKIP__ = false
+export const __OTP_EMAIL__ = 'a@maroonstudios.com'
+export const __IS_PATIENT_APP__ = true
+export const __IS_DOCTOR_APP__ = !__IS_PATIENT_APP__
+export const APP_VERSION = 'v0.5.0'
+export const __TESTBUILD_DATETIME__ = ' 816_1300'
+export const __RESEND_OTP_INTERVAL_IN_MS__ = 30000
+export const __AMPLITUDE_ID__ = '01d5fb2b0eb5ca1119c82dae69add8a8'
+export const EXPO_DEBUG = true
+export const __SESSION__ = 1000 * 10 * 60

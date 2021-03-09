@@ -1,0 +1,20 @@
+image: patwoz/expo-cli:3
+
+services: 
+  - name: python:alpine
+    alias: python
+stages:
+  - build
+
+build_dev_patient:
+  only: 
+    - feat/Dashboard
+  stage: build
+  when: manual
+  script:
+    - python ––version
+    - npm i
+    - expo login -u $EXPO_U -p $EXPO_P
+    - expo push:android:upload --api-key $PATIENT_API_KEY
+    - expo build:android
+  

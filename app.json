@@ -1,0 +1,50 @@
+{
+  "expo": {
+    "name": "Aria Patient",
+    "slug": "aria-patient",
+    "privacy": "unlisted",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/app_icon_patient.png",
+    "splash": {
+      "image": "./assets/splash_screen.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "android": {
+      "icon": "./assets/app_icon_patient.png",
+      "package": "solutions.dcentric.aria.mobile",
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "versionCode": 4,
+      "googleServicesFile": "./google-services.json"
+    },
+    "ios": {
+      "icon": "./assets/app_icon_patient.png",
+      "bundleIdentifier": "health.dcentric.aria.mobile",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Allow Aria to use your camera to scan Aria QR codes",
+        "NSPhotoLibraryUsageDescription": "Give Aria permission to access your photos so that you can add your photo when requesting for recovery"
+      },
+      "supportsTablet": false,
+      "buildNumber": "1.0.0"
+    },
+    "notification": {
+      "icon": "./assets/app_icon_patient.png"
+    }
+  }
+}
